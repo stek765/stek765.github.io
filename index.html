@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <!-- Menu Hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+        </ul>
+    </nav>
+
+    <section id="intro"> 
+        <div class="container">
+            <h1 style="font-weight: 300;">
+                Stefano <strong style="font-weight: 800; color: rgb(0, 108, 255)">Zanolli</strong>
+              </h1>
+            <img src="bw_profile.jpeg" alt="Stefano Zanolli" class="profile-image">
+            <p>Nice to meet you all.</p>
+            <p>My name is Stefano Zanolli,  and I’m a passionate student with a <span style="font-weight: bold; color: rgb(173, 205, 244);">degree in Computer Science</span> from the University of Verona, Italy.</p>
+            <p>I’m an aspiring security and embedded systems engineer, passionate about exploring the intersection of cybersecurity and low-level firmware/hardware development. While I don’t have professional experience yet, I’m highly <span style="font-weight: bold; color: rgb(173, 205, 244);">motivated to learn</span> and grow in a field that combines computer science, physics, and mathematics.</p>
+            <p>I’m particularly interested in working with embedded devices and boards, understanding how systems operate at a fundamental level, and improving their security. The idea of analyzing and developing firmware, securing hardware architectures, and working with low-level programming excites me. I look forward to building my skills and <span style="font-weight: bold; color: rgb(173, 205, 244);">contributing to innovative</span> projects in this field.</p>
+            
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://github.com/stek765" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/stefano-zanolli-76616b206/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/stek.77/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-light">
+        <div class="container">
+            <h2>PROJECTS</h2>
+            <p>Here are some of the projects I have worked on.</p>
+
+            <hr>
+            <br>    
+            <div class="project">
+                <h3>PGP Implementation</h3>
+                <br>
+                <img src="pgp-image.png" alt="PGP Encryption" class="project-image" style="width: 400px; height: 400px;">
+                <p>An implementation of the Pretty Good Privacy (PGP) protocol for sending emails securely, ensuring <strong>Confidentiality, Integrity, and Authenticity</strong>. It allows users to encrypt, decrypt, sign, and verify emails with cryptographic keys.</p>
+            </div>
+
+            <div class="project">
+                <h3 style="color: inherit;">Secure PGP Email Application</h3>
+                <p>This application enables secure email operations using PGP encryption and signatures. Users can securely exchange emails using encryption, message signing, and authentication mechanisms.</p>
+                <ul>
+                    <li><strong>Encrypt Messages:</strong> <span class="muted-text">Secure your messages by encrypting them with the recipient's public key.</span></li>
+                    <li><strong>Decrypt Messages:</strong> <span class="muted-text">Retrieve original messages using your private key.</span></li>
+                    <li><strong>Sign Messages:</strong> <span class="muted-text">Authenticate messages with a digital signature.</span></li>
+                    <li><strong>Send Secure Emails:</strong> <span class="muted-text">Combine encryption and signing for secure communication.</span></li>
+                </ul>
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <br>    
+            <div class="project">
+                <h3>Fourier Transform & Signal Processing</h3>
+                <br>
+                <img src="Segnale.png" alt="Segnale" class="project-image" style="width: 400px; height: 400px;">
+               
+                <p>This project focuses on the **Fourier Transform** and its applications in signal processing. The Fourier Transform allows the decomposition of signals into their frequency components, making it a fundamental tool in various fields, including audio processing, communications, and image analysis.</p>
+            
+                <div class="project-gallery">
+                    <div class="image-container">
+                        <img src="EQ.gif" alt="Real-time Equalizer" class="project-image">
+                        <p class="image-description">Real-time equalizer visualization using Fourier Transform.</p>
+                    </div>
+            
+                    <div class="image-container">
+                        <img src="Fasori.gif" alt="Phasor Combination" class="project-image">
+                        <p class="image-description">Visualization of phasor combinations in signal processing.</p>
+                    </div>
+            
+                    <div class="image-container">
+                        <img src="Spettro_S.png" alt="Fourier Spectrum" class="project-image">
+                        <p class="image-description">Fourier Transform applied to an image to analyze frequency components.</p>
+                    </div>
+                </div>
+            
+                <ul>
+                    <li><strong>Signal Decomposition:</strong> Breaking down complex signals into simpler sinusoidal components.</li>
+                    <li><strong>Noise Filtering:</strong> Enhancing signal clarity by removing unwanted frequency components.</li>
+                    <li><strong>Compression Techniques:</strong> Reducing data size while preserving essential information.</li>
+                    <li><strong>Real-World Applications:</strong> Used in audio equalization, image enhancement, and medical imaging.</li>
+                </ul>
+            </div>
+    </section>
+
+    <style>
+        .muted-text {
+            color: #98a1bb;
+        }
+    </style>
+
+
+    <!-- Experience Section -->
+    <section id="experiences" class="section section-light">
+        <div class="container">
+            <h2>EXPERIENCES</h2>
+            <p>Here are some areas where I have developed my skills.</p>
+            
+            <hr>
+            <br>  
+
+            <div class="experience-item">
+                <h3>Cybersecurity & Embedded Systems</h3>
+                <p>Exploring vulnerabilities in embedded systems, low-level firmware security, and hardware analysis.</p>
+                <ul>
+                    <li><strong>Reverse Engineering:</strong> <span class="muted-text">Analyzing firmware to detect security flaws and optimize performance.</span></li>
+                    <li><strong>IoT Security:</strong> <span class="muted-text">Identifying and mitigating security risks in Internet of Things (IoT) devices.</span></li>
+                    <li><strong>Hardware Hacking:</strong> <span class="muted-text">Working with microcontrollers, debugging hardware, and extracting data from devices.</span></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Software Development</h3>
+                <p>Hands-on experience in software development for security and embedded systems.</p>
+                <ul>
+                    <li><strong>Low-level Programming:</strong> <span class="muted-text">Developing and analyzing firmware using C and Assembly.</span></li>
+                    <li><strong>Security Tools Development:</strong> <span class="muted-text">Creating scripts and tools for security testing and automation.</span></li>
+                    <li><strong>Networking Protocols:</strong> <span class="muted-text">Understanding and securing communication between devices.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+
+     <!-- Contact Section -->
+     <section id="contacts" class="section section-dark">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out through the following channels:</p>
+            <ul>
+                <li>Email: <a href="mailto:stefanozanolli765@gmail.com">stefanozanolli765@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/stefano-zanolli-76616b206/" target="_blank">LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com/stek765" target="_blank">GitHub Profile</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+</body>
+</html>

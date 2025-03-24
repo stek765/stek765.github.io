@@ -1,0 +1,255 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Stile del body */
+body {
+    background: linear-gradient(to bottom right, rgba(0, 4, 41, 0.12), rgba(23, 39, 72, 0.55) 15.97%, rgba(2, 14, 61, 0.6)),
+    radial-gradient(circle at center, rgba(10, 25, 47, 0.7) 10%, rgba(0, 0, 0, 0.9) 90%);
+    background-blend-mode: overlay, normal;
+    color: #ccd6f6;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+/* Sfondo con particelle */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Contenitore sezioni */
+.container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 50px 40px;
+    background: rgba(0, 0, 0, 0.67);
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Titolo principale */
+h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Sottotitolo */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #8bfaff;
+    margin-bottom: 20px;
+}
+
+/* Testo generale */
+p {
+    font-size: 18px;
+    color: #98a1bb;
+    margin-bottom: 20px;
+}
+
+/* Miglioramento della lista esperienze */
+ul {
+    list-style-type: square;
+    margin-left: 25px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Link */
+a {
+    color: #7dc9d5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #45aaf2;
+    text-decoration: underline;
+}
+
+/* Sezione immagini */
+.profile-image {
+    width: 450px;
+    height: 500px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    border: 3px solid rgba(80, 129, 214, 0.9);
+}
+
+/* Icone social */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: rgba(131, 118, 213, 1);
+    font-size: 30px;
+    transition: color 0.3s;
+    border-bottom: solid 1px;
+}
+
+.social-icons a:hover {
+    color: #45aaf2;
+}
+
+/* Sezioni separate */
+.section {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section-light {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section-dark {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu hamburger */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Menu */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.nav-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-menu li {
+    margin: 20px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #66fcf1;
+}
+
+/* Sezione Experience */
+.experience-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Migliora il contrasto tra il titolo e la descrizione */
+.experience-item h3 {
+
+    font-size: 22px;
+    color: #8bfaff;
+    margin-bottom: 10px;
+}
+
+/* Testo delle descrizioni più soft */
+.muted-text {
+    color: rgba(152, 161, 187, 0.75);
+    font-weight: lighter;
+}
+
+h3 {
+    color: rgba(230, 219, 180, 1);
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-container {
+    text-align: center;
+
+}
+
+.project-image {
+    width: 100%;
+
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-description {
+    font-size: 16px;
+    color: #98a1bb;
+    margin-top: 10px;
+}
